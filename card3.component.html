@@ -1,0 +1,16 @@
+<div class="card" style="width: 30rem;">
+    <div *ngFor="let data  of datas">  
+      <div class="img">
+      <img [src]="data.image">
+    </div>
+      <div class="para">
+     <div class="life"><p> <b>{{data.lifestyle}}</b></p></div>
+     <p>  {{data.date}}</p>
+      <p>{{data.discount}}</p>
+      <p>  {{data.until}}</p>
+      <p>{{data.portion}}</p>
+      <p>  {{data.outof}}</p>
+      <p>{{data.seller}}</p>
+        </div></div>
+  </div>
+   

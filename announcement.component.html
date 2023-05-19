@@ -1,0 +1,35 @@
+<div class="container mt-3">
+    <table class="table"  >
+    <thead class="fs-6">
+      <tr>
+     <h4> <b><th scope="col-sm-3">ANNOUNCEMENT</th></b> </h4>
+        <th scope="col-2"> <input
+          type="search"
+          class="form-control rounded"
+          placeholder="Search"
+          aria-label="Search"
+        /></th>
+        
+      </tr>
+    </thead>
+    <tbody *ngFor="let data of datas" class="border border-1">
+      <tr>
+        <td>
+          <div class="middle-container d flex justify-content-start align-item-center">
+            <div class="check-div px-3">
+             
+            </div>
+                 <div class="d-flex flex-column text-left mr-1">
+               
+                  <span class="d-flex justify-content-start text-muted">{{data.ProjectType}}</span>
+                 </div>
+            </div>
+        </td>
+        <td><b>{{data.task}}</b></td>
+  
+     <img [src]="data.image">
+    
+      </tr>
+         </tbody>
+    </table>
+</div>
